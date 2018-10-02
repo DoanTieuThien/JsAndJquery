@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Demo js and jquery basic </title>
+
+<!--Link chi den thu vien jquery, phai co thu vien nay cau lenh jquery moi co tac dung -->
+<!--Boi vi js va jquery se chay step by step tu tren xuong duoi nen muon chay ham nao can load thu vien trc-->
+<!--Sau khi thu vien duoc load moi den file chuc nang-->
+<script src = "jquery.min.js"></script>
+
+<!--Load file chua chuc nang xu ly-->
+<script src = "function.js"></script>
+</head>
+
+<!--action = return fase y la se ko load lai trang khi click vao nut bam trong form, binh thuong action -->
+<!--action se la link website de post form -->
+<form action = "return false">  
+	<label>Gia tri 1: </label><input type = "text" placeholder = "Nhap gia tri test 1" id = "GT1"/><br>
+	<label>Gia tri 2: </label><input type = "text" placeholder = "Nhap gia tri test 2" id = "GT2"/><br>
+	<label>Ket qua = Gia tri 1 +  Gia tri 2: </label><input type = "text" placeholder = "Ket qua" id = "KQ"/><br>
+	
+	<!--goi ham sum qua su kien onclick-->
+	<input type = "button" value = "Ket qua" onclick = "sum()"/>
+	<input type = "button" value = "Tu dong tinh toan" onclick = "autoSumRandom()"/>
+</form>
+
+<label>Website muon load: </label><input type = "text" placeholder = "Web address" id = "address"/><br>
+<input type = "button" value = "Load Web" onclick = "loadWebsite()"/>
+
+<input type = "button" value = "Set gia tri theo id" onclick = "setValueById('autocomplete','Mao son troc quy nhan')"/>
+<!--Div nay de chua noi dung website duoc load ve-->
+<div id ="pageContent" ></div>
+</html>
